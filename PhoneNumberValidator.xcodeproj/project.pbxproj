@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E753E45EC8CF390DB03CB07 /* Pods_PhoneNumberValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D8C8DC59A8FE7C1E6E1A38 /* Pods_PhoneNumberValidator.framework */; };
 		3552BE062369BA850087DA56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3552BE052369BA850087DA56 /* AppDelegate.swift */; };
 		3552BE082369BA850087DA56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3552BE072369BA850087DA56 /* SceneDelegate.swift */; };
 		3552BE0A2369BA850087DA56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3552BE092369BA850087DA56 /* ViewController.swift */; };
@@ -51,6 +52,9 @@
 		3552BE262369BA880087DA56 /* PhoneNumberValidatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhoneNumberValidatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3552BE2A2369BA880087DA56 /* PhoneNumberValidatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberValidatorUITests.swift; sourceTree = "<group>"; };
 		3552BE2C2369BA880087DA56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C478A1A9398E72EAB29B120 /* Pods-PhoneNumberValidator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneNumberValidator.debug.xcconfig"; path = "Target Support Files/Pods-PhoneNumberValidator/Pods-PhoneNumberValidator.debug.xcconfig"; sourceTree = "<group>"; };
+		CD5F7D7F090A9DD52D6C7E92 /* Pods-PhoneNumberValidator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneNumberValidator.release.xcconfig"; path = "Target Support Files/Pods-PhoneNumberValidator/Pods-PhoneNumberValidator.release.xcconfig"; sourceTree = "<group>"; };
+		F6D8C8DC59A8FE7C1E6E1A38 /* Pods_PhoneNumberValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneNumberValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E753E45EC8CF390DB03CB07 /* Pods_PhoneNumberValidator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0239B62CAA5310943BE0D443 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6D8C8DC59A8FE7C1E6E1A38 /* Pods_PhoneNumberValidator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3552BDF92369BA850087DA56 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +98,8 @@
 				3552BE1E2369BA880087DA56 /* PhoneNumberValidatorTests */,
 				3552BE292369BA880087DA56 /* PhoneNumberValidatorUITests */,
 				3552BE032369BA850087DA56 /* Products */,
+				ED08AE22302C7ADAA6EB8514 /* Pods */,
+				0239B62CAA5310943BE0D443 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +146,15 @@
 			path = PhoneNumberValidatorUITests;
 			sourceTree = "<group>";
 		};
+		ED08AE22302C7ADAA6EB8514 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C478A1A9398E72EAB29B120 /* Pods-PhoneNumberValidator.debug.xcconfig */,
+				CD5F7D7F090A9DD52D6C7E92 /* Pods-PhoneNumberValidator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3552BE2F2369BA880087DA56 /* Build configuration list for PBXNativeTarget "PhoneNumberValidator" */;
 			buildPhases = (
+				E1AC97D2E2FC7E69809F61EC /* [CP] Check Pods Manifest.lock */,
 				3552BDFE2369BA850087DA56 /* Sources */,
 				3552BDFF2369BA850087DA56 /* Frameworks */,
 				3552BE002369BA850087DA56 /* Resources */,
+				D9EB77E70B1851848AC6F1B6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +282,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D9EB77E70B1851848AC6F1B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhoneNumberValidator/Pods-PhoneNumberValidator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhoneNumberValidator/Pods-PhoneNumberValidator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhoneNumberValidator/Pods-PhoneNumberValidator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1AC97D2E2FC7E69809F61EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhoneNumberValidator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3552BDFE2369BA850087DA56 /* Sources */ = {
@@ -436,11 +504,13 @@
 		};
 		3552BE302369BA880087DA56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C478A1A9398E72EAB29B120 /* Pods-PhoneNumberValidator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LN6WEZTE69;
 				INFOPLIST_FILE = PhoneNumberValidator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,11 +524,13 @@
 		};
 		3552BE312369BA880087DA56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD5F7D7F090A9DD52D6C7E92 /* Pods-PhoneNumberValidator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LN6WEZTE69;
 				INFOPLIST_FILE = PhoneNumberValidator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
